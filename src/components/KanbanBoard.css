@@ -1,0 +1,138 @@
+.kanban-board {
+  display: flex;
+  /* justify-content: space-between; */
+  padding: 20px;
+  background-color: #f4f4f4;
+  gap: 25px;
+}
+
+.column {
+  width: 18%;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 22px;
+}
+
+.column-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 330px;
+}
+
+.column-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 60px;
+}
+
+.column .icon-number {
+  font-size: 18px;
+}
+
+.column .icon-plus {
+  font-size: 20px;
+}
+
+.column .icon-dots {
+  font-size: 20px;
+}
+
+.column span {
+  /* font-weight: bold; */
+}
+
+.column-content{
+  margin-top: 30px;
+  width: 330px;
+}
+.ticket{
+  background-color: white;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid #ccc;
+  height: 150px;
+  width: 330px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06); 
+  transition: transform 0.2s, box-shadow 0.2s; 
+}
+.ticket-detail{
+  display: flex;
+  flex-direction: column;
+  line-height: 22px;
+  gap: 8px;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+.ticket-id{
+  color: #ababab;
+  font-size: 15px;
+  font-weight: 500;
+}
+.ticket-title{
+  color: rgb(38, 38, 38);
+  font-size: 15px;
+}
+.ticket-tag-div{
+  display: flex;
+  gap: 10px;
+}
+.ticket-tag{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 8px;
+  border: 0px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06); 
+  transition: transform 0.2s, box-shadow 0.2s;
+  color: #707070;
+}
+.ticket-tag-three-dot{
+  border-radius: 6px;
+  border: 0px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06); 
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.header-bar{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.profile-icon{
+  border-radius: 25px;
+  width: 25px;
+  height: 25px;
+  border: 1px snow;
+  background-color: rgb(164, 164, 246);
+  font-size: 13px;
+  color: white;
+  margin-top: 10px;
+}
+.profile-div{
+  margin-top: 12px;
+}
+.ticket-div{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+@media (max-width: 868px) {
+  .kanban-board {
+    flex-wrap: wrap;
+  }
+
+  .column {
+    flex: 1 1 100%; /* Full width on smaller screens */
+  }
+
+  .ticket {
+    height: auto; /* Adjust height for smaller screens */
+  }
+}

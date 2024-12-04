@@ -1,0 +1,96 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  color: white;
+  
+}
+
+.display-btn {
+  display: flex;
+  align-items: center;
+  padding: 8px 15px;
+  border-radius: 1px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06); 
+  transition: transform 0.2s, box-shadow 0.2s; 
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 25px;
+  gap: 4px;
+}
+.display-btn1{
+  /* color: #666666; */
+}
+
+.down-btn {
+  background-color: transparent;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 330px; 
+  background-color: #fff;
+  position: absolute;
+  top: 40px;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-left: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06); 
+  transition: transform 0.2s, box-shadow 0.2s; 
+}
+.grouping,.Ordering{
+  font-size: 14px;
+  color: #555; /* Text color */
+  font-weight: 500; /* Medium weight */
+  font-size: 18px;
+}
+
+.dropdown-item {
+  display: flex;
+  gap: 105px; /* Space between label and select box */
+  padding: 10px;
+}
+
+.dropdown-submenu {
+  background-color: #555;
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+.status-btn, .priority-btn {
+  display: flex;
+  align-items: center;
+  /* padding: 8px; */
+  font-size: 18px;
+  width: 130px;
+  gap: 40px;
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 6px; /* Rounded corners */
+  background-color: #fff; /* White background */
+  appearance: none; /* Remove default dropdown styles for consistency */
+  cursor: pointer;
+}
+
+.icon {
+  margin-right: 5px;
+}
+.display-btn{
+  border-radius: 5px;
+  border-color: #b8b7b7;
+  background-color: white;
+  color: rgb(34, 33, 33);
+  
+}
+/* .kanban-container{
+  padding-right: 25px;
+} */
